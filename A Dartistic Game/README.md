@@ -1,4 +1,4 @@
-# Programming-Professions-Project-Group-7
+# A Dartistic Game
 This is a dart-exploratory Project for the Software Professions.
 
 
