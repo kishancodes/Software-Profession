@@ -1,0 +1,43 @@
+{
+  "name": "DartisticGame",
+  "version": "1.0.0",
+  "description": "A game showing off darts",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "startWithTransparentOption": "electron --enable-transparent-visuals .",
+    "startWithAllOptions": "electron --enable-transparent-visuals --disable-gpu .",
+    "pack": "electron-builder --dir",
+    "dist-win": "electron-builder --win portable",
+    "dist-nix": "electron-builder"
+  },
+  "keywords": [
+    "darts",
+    "algorithm",
+    "tutorial"
+  ],
+  "author": "Group 7",
+  "license": "GPLv3",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "^22.14.5"
+  },
+  "build": {
+    "appId": "Darts Project",
+    "mac": {
+      "category": "darts.app.game.executable"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS"
+    }
+  },
+  "dependencies": {
+    "electron-log": "^4.4.1"
+  }
+}
